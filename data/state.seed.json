@@ -1,0 +1,408 @@
+{
+  "stages": [
+    "Introduction",
+    "Investment Committee",
+    "Offer",
+    "Structuring/Onboarding",
+    "Investment Enablement"
+  ],
+  "eliminatedStage": "Eliminated",
+  "candidates": [
+    {
+      "id": "ben-holtz",
+      "name": "Ben Holtz",
+      "firm": "",
+      "stage": "Eliminated",
+      "note": "not currently pursuing a Riptide vehicle at all (as of 2026-08-03).",
+      "updatedAt": "2026-08-05T11:39:04.489Z"
+    },
+    {
+      "id": "blago-baychev",
+      "name": "Blago Baychev",
+      "firm": "",
+      "stage": "Introduction",
+      "note": "With SG/MH - talk w/ MH on data cost structure.",
+      "updatedAt": "2026-08-04T13:50:40.426Z"
+    },
+    {
+      "id": "brian-church",
+      "name": "Brian Church",
+      "firm": "",
+      "stage": "Introduction",
+      "note": "Follow up w/ SG/MH",
+      "updatedAt": "2026-08-04T15:09:21.290Z"
+    },
+    {
+      "id": "bujar-gosalci",
+      "name": "Bujar Gosalci",
+      "firm": "",
+      "stage": "Investment Committee",
+      "note": "Options from Kosovo - TE/KF",
+      "updatedAt": "2026-08-04T14:26:06.170Z"
+    },
+    {
+      "id": "christopher-hughes",
+      "name": "Christopher Hughes",
+      "firm": "",
+      "stage": "Investment Committee",
+      "note": "Alpha Capture",
+      "updatedAt": "2026-08-04T13:53:40.499Z"
+    },
+    {
+      "id": "colin-lozzi",
+      "name": "Colin Lozzi",
+      "firm": "",
+      "stage": "Introduction",
+      "note": "With KF",
+      "updatedAt": "2026-08-04T14:26:58.908Z"
+    },
+    {
+      "id": "daniel-czabaj",
+      "name": "Daniel Czabaj",
+      "firm": "",
+      "stage": "Eliminated",
+      "note": "Said he doesn't see himself as a fit.",
+      "updatedAt": "2026-08-05T11:38:41.128Z"
+    },
+    {
+      "id": "darryl-wyse",
+      "name": "Darryl Wyse",
+      "firm": "",
+      "stage": "Introduction",
+      "note": "SG Strategy Review, KF Business Review",
+      "updatedAt": "2026-08-04T13:54:48.083Z"
+    },
+    {
+      "id": "deepak-singh",
+      "name": "Deepak Singh",
+      "firm": "",
+      "stage": "Investment Committee",
+      "note": "With MH/KF - how can we fund it?",
+      "updatedAt": "2026-08-04T14:05:30.212Z"
+    },
+    {
+      "id": "dillon-lanius",
+      "name": "Dillon Lanius",
+      "firm": "",
+      "stage": "Offer",
+      "note": "RL BOX HIM IN",
+      "updatedAt": "2026-08-04T16:41:48.868Z"
+    },
+    {
+      "id": "dixon-midland",
+      "name": "Dixon Midland",
+      "firm": "",
+      "stage": "Investment Committee",
+      "note": "Tax aware with enhanced trading",
+      "updatedAt": "2026-08-04T14:02:28.333Z"
+    },
+    {
+      "id": "doug-clinton",
+      "name": "Doug Clinton",
+      "firm": "",
+      "stage": "Introduction",
+      "note": "SG/KF Review",
+      "updatedAt": "2026-08-04T14:02:41.316Z"
+    },
+    {
+      "id": "geoffrey-horton",
+      "name": "Geoffrey Horton",
+      "firm": "",
+      "stage": "Investment Committee",
+      "note": "Business Growth",
+      "updatedAt": "2026-08-04T14:03:36.584Z"
+    },
+    {
+      "id": "guilherme-motta",
+      "name": "Guilherme Motta",
+      "firm": "",
+      "stage": "Investment Committee",
+      "note": "With MH/KF - how can we fund it?",
+      "updatedAt": "2026-08-04T14:05:33.524Z"
+    },
+    {
+      "id": "hayk-grigoryan",
+      "name": "Hayk Grigoryan",
+      "firm": "",
+      "stage": "Investment Committee",
+      "note": "Alpha Capture - no money",
+      "updatedAt": "2026-08-04T14:08:18.051Z"
+    },
+    {
+      "id": "isaac-tak",
+      "name": "Isaac Tak",
+      "firm": "",
+      "stage": "Structuring/Onboarding",
+      "note": "Special sits - Citadel and single manager w/o state of NY funding",
+      "updatedAt": "2026-08-04T15:47:05.836Z"
+    },
+    {
+      "id": "jay-schneider",
+      "name": "Jay Schneider",
+      "firm": "",
+      "stage": "Introduction",
+      "note": "KF/TE Pitch",
+      "updatedAt": "2026-08-04T14:11:24.932Z"
+    },
+    {
+      "id": "jennifer-croswell",
+      "name": "Jennifer Croswell",
+      "firm": "",
+      "stage": "Introduction",
+      "note": "Lunch meeting.",
+      "updatedAt": "2026-08-04T14:12:09.204Z"
+    },
+    {
+      "id": "jesse-laudon",
+      "name": "Jesse Laudon",
+      "firm": "",
+      "stage": "Offer",
+      "note": "MLP Utilities",
+      "updatedAt": "2026-08-04T14:12:33.242Z"
+    },
+    {
+      "id": "joe-padellaro",
+      "name": "Joe Padellaro",
+      "firm": "",
+      "stage": "Offer",
+      "note": "Let's make a deal (MH/KF/TE)",
+      "updatedAt": "2026-08-04T14:15:42.782Z"
+    },
+    {
+      "id": "mark-melchiorre",
+      "name": "Mark Melchiorre",
+      "firm": "",
+      "stage": "Offer",
+      "note": "Schedule w/ MH/TE/RL",
+      "updatedAt": "2026-08-04T14:16:30.540Z"
+    },
+    {
+      "id": "mayank-lodaliya",
+      "name": "Mayank Lodaliya",
+      "firm": "",
+      "stage": "Eliminated",
+      "note": "Riptide explicitly declined to move forward — cited too young, too little capital.",
+      "updatedAt": "2026-08-05T11:38:30.353Z"
+    },
+    {
+      "id": "patrick-conway",
+      "name": "Patrick Conway",
+      "firm": "",
+      "stage": "Investment Committee",
+      "note": "With MH/KF - how can we fund it?",
+      "updatedAt": "2026-08-04T14:17:50.958Z"
+    },
+    {
+      "id": "ran-karni",
+      "name": "Ran Karni",
+      "firm": "Cingulait",
+      "stage": "Introduction",
+      "note": "W/ Matt - at Hurricane",
+      "updatedAt": "2026-08-04T14:19:09.611Z"
+    },
+    {
+      "id": "rishi-tej",
+      "name": "Rishi Tej",
+      "firm": "",
+      "stage": "Eliminated",
+      "note": "Analyst",
+      "updatedAt": "2026-08-04T14:26:40.212Z"
+    },
+    {
+      "id": "shahin-vallee",
+      "name": "Shahin Vallée",
+      "firm": "",
+      "stage": "Introduction",
+      "note": "W/ KF/TE",
+      "updatedAt": "2026-08-04T14:19:51.682Z"
+    },
+    {
+      "id": "stevan-jevremov",
+      "name": "Stevan Jevremov",
+      "firm": "Desert Rose Capital",
+      "stage": "Introduction",
+      "note": "Follow up via KF",
+      "updatedAt": "2026-08-04T14:21:17.770Z"
+    },
+    {
+      "id": "steven-moyer",
+      "name": "Steven Moyer",
+      "firm": "",
+      "stage": "Offer",
+      "note": "SMA w/ ETF optionality - need to pitch a start in ROF as Private Fund",
+      "updatedAt": "2026-08-04T16:41:59.029Z"
+    },
+    {
+      "id": "symphony-one-capital",
+      "name": "Symphony One Capital",
+      "firm": "",
+      "stage": "Eliminated",
+      "note": "No SMAs",
+      "updatedAt": "2026-08-04T14:27:46.954Z"
+    },
+    {
+      "id": "white-manna-capital",
+      "name": "White Manna Capital",
+      "firm": "",
+      "stage": "Eliminated",
+      "note": "Too far along.",
+      "updatedAt": "2026-08-05T11:38:14.840Z"
+    },
+    {
+      "id": "ze-capital",
+      "name": "ZE Capital",
+      "firm": "",
+      "stage": "Eliminated",
+      "note": "Too mature- not a fit",
+      "updatedAt": "2026-08-04T14:32:04.515Z"
+    },
+    {
+      "id": "roy-alame",
+      "name": "Roy Alame",
+      "firm": "",
+      "stage": "Offer",
+      "note": "Pitch w/ RL",
+      "updatedAt": "2026-08-04T14:23:39.738Z"
+    },
+    {
+      "id": "quantinovva",
+      "name": "Quantinovva",
+      "firm": "",
+      "stage": "Future Launches",
+      "note": "10/1 launch - doc updates",
+      "updatedAt": "2026-08-04T18:50:33.837Z"
+    },
+    {
+      "id": "flex-income",
+      "name": "Flex Income",
+      "firm": "",
+      "stage": "Future Launches",
+      "note": "10/1 launch - doc updates",
+      "updatedAt": "2026-08-04T18:50:35.829Z"
+    },
+    {
+      "id": "kit-spring",
+      "name": "Kit Spring",
+      "firm": "",
+      "stage": "Eliminated",
+      "note": "Too volatilte",
+      "updatedAt": "2026-08-04T14:33:47.392Z"
+    },
+    {
+      "id": "linda-du",
+      "name": "Linda Du",
+      "firm": "",
+      "stage": "Investment Enablement",
+      "note": "",
+      "updatedAt": "2026-08-04T14:34:38.277Z"
+    },
+    {
+      "id": "niko-weil",
+      "name": "Niko Weil",
+      "firm": "",
+      "stage": "Investment Enablement",
+      "note": "",
+      "updatedAt": "2026-08-04T14:34:52.196Z"
+    },
+    {
+      "id": "strivepoint",
+      "name": "Strivepoint",
+      "firm": "",
+      "stage": "Introduction",
+      "note": "Follow up w/ TE/KF",
+      "updatedAt": "2026-08-04T14:35:35.690Z"
+    },
+    {
+      "id": "oraclum",
+      "name": "Oraclum",
+      "firm": "",
+      "stage": "Future Launches",
+      "note": "Jan '27 - need funding",
+      "updatedAt": "2026-08-04T18:50:38.140Z"
+    },
+    {
+      "id": "fred-steindler",
+      "name": "Fred Steindler",
+      "firm": "",
+      "stage": "Offer",
+      "note": "W/ TE/SG",
+      "updatedAt": "2026-08-04T14:38:36.562Z"
+    },
+    {
+      "id": "energy-group-capital",
+      "name": "Energy Group Capital",
+      "firm": "",
+      "stage": "Investment Committee",
+      "note": "With MH/KF - how can we fund it?",
+      "updatedAt": "2026-08-04T14:40:45.117Z"
+    },
+    {
+      "id": "wels",
+      "name": "Wels",
+      "firm": "Hyperion",
+      "stage": "Investment Enablement",
+      "note": "",
+      "updatedAt": "2026-08-04T14:58:48.701Z"
+    },
+    {
+      "id": "yogash-borkar",
+      "name": "Yogash Borkar",
+      "firm": "",
+      "stage": "Investment Committee",
+      "note": "Long Only PM in Greenwich - thinking of his next move",
+      "updatedAt": "2026-08-04T18:17:21.622Z"
+    },
+    {
+      "id": "james-sinclair",
+      "name": "James Sinclair",
+      "firm": "",
+      "stage": "Future Launches",
+      "note": "Likely Jan 27 - $25-50m launch",
+      "scheduled": false,
+      "updatedAt": "2026-08-04T18:57:11.584Z"
+    },
+    {
+      "id": "david-rosenberg",
+      "name": "David Rosenberg",
+      "firm": "",
+      "stage": "Future Launches",
+      "note": "10/1 - Offshore Required",
+      "scheduled": false,
+      "updatedAt": "2026-08-04T18:54:58.712Z"
+    },
+    {
+      "id": "martin-kollmorgen",
+      "name": "Martin Kollmorgen",
+      "firm": "Serenity Alternatives",
+      "stage": "Introduction",
+      "note": "Intro call 8/5",
+      "updatedAt": null
+    },
+    {
+      "id": "sean-lee",
+      "name": "Sean Lee",
+      "firm": "Unwavering Capital",
+      "stage": "Introduction",
+      "note": "Intro call 8/5 - Kuala Lumpur",
+      "updatedAt": null
+    },
+    {
+      "id": "philip-lockett",
+      "name": "Philip Lockett",
+      "firm": "BlackRidge",
+      "stage": "Introduction",
+      "note": "Alpha capture via Marshall Wace - follow-up w/ Tyler next",
+      "updatedAt": null
+    },
+    {
+      "id": "matthew-hansen",
+      "name": "Matthew Hansen",
+      "firm": "APM (Advanced Portfolio Management)",
+      "stage": "Introduction",
+      "note": "Market Neutral SMA - profile pending",
+      "updatedAt": null
+    }
+  ],
+  "futureLaunchStage": "Future Launches",
+  "_rev": 2
+}
