@@ -1,12 +1,18 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { BoardState, Candidate } from "@/lib/board-types";
+import { BoardState, Candidate, Attachment } from "@/lib/board-types";
 
 const POLL_INTERVAL_MS = 4000;
 
 function slugify(name: string): string {
   return name.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+function formatSize(bytes: number): string {
+  if (bytes < 1024) return `${bytes}B`;
+  if (bytes < 1024 * 1024) return `${Math.round(bytes / 1024)}KB`;
+  return `${(bytes / 1024 / 1024).toFixed(1)}MB`;
 }
 
 function categoryOf(state: BoardState, stage: string): "main" | "future" | "eliminated" {
@@ -27,6 +33,9 @@ export default function BoardPage() {
   const [editingId, setEditingId] = useState<string | null>(null);
   const [draftNote, setDraftNote] = useState("");
   const [dragOverStage, setDragOverStage] = useState<string | null>(null);
+  const [uploadingId, setUploadingId] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const pendingCandidateIdRef = useRef<string | null>(null);
 
   // Skip clobbering an in-progress note edit when a background poll lands.
   const editingIdRef = useRef<string | null>(null);
@@ -171,6 +180,59 @@ export default function BoardPage() {
     setNewFirm("");
   }
 
+  function triggerAttach(candidateId: string) {
+    pendingCandidateIdRef.current = candidateId;
+    fileInputRef.current?.click();
+  }
+
+  async function handleFileSelected(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    const candidateId = pendingCandidateIdRef.current;
+    e.target.value = ""; // allow re-selecting the same file next time
+    if (!file || !candidateId) return;
+
+    setUploadingId(candidateId);
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("candidateId", candidateId);
+      const res = await fetch("/api/attachments", { method: "POST", body: formData });
+      if (res.status === 401) {
+        window.location.href = "/login";
+        return;
+      }
+      if (!res.ok) throw new Error("upload failed");
+      const attachment: Attachment = await res.json();
+      mutate((next) => {
+        const c = next.candidates.find((x) => x.id === candidateId);
+        if (!c) return;
+        c.attachments = [...(c.attachments || []), attachment];
+        c.updatedAt = new Date().toISOString();
+      });
+    } catch {
+      setBanner("Attachment upload failed. Please try again.");
+    } finally {
+      setUploadingId(null);
+    }
+  }
+
+  function removeAttachment(candidateId: string, attachment: Attachment) {
+    mutate((next) => {
+      const c = next.candidates.find((x) => x.id === candidateId);
+      if (!c) return;
+      c.attachments = (c.attachments || []).filter((a) => a.id !== attachment.id);
+      c.updatedAt = new Date().toISOString();
+    });
+    // Best-effort: an orphaned blob left behind on failure isn't worth
+    // blocking the UI over, since the metadata (the source of truth) is
+    // already gone from board state above.
+    fetch("/api/attachments", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ url: attachment.url }),
+    }).catch(() => undefined);
+  }
+
   if (!state) {
     return (
       <>
@@ -221,6 +283,13 @@ export default function BoardPage() {
       </div>
 
       {banner && <div id="banner" className="show">{banner}</div>}
+
+      <input
+        ref={fileInputRef}
+        type="file"
+        style={{ display: "none" }}
+        onChange={handleFileSelected}
+      />
 
       <div id="board">
         {allStages.map((stage) => {
@@ -282,7 +351,46 @@ export default function BoardPage() {
                       </button>
                       {c.note && <div className="card-note">{c.note}</div>}
 
+                      {c.attachments && c.attachments.length > 0 && (
+                        <div className="card-attachments">
+                          {c.attachments.map((a) => (
+                            <div key={a.id} className="attachment-chip">
+                              <a
+                                href={a.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title={a.name}
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                📎 {a.name}
+                              </a>
+                              <span className="attachment-size">{formatSize(a.size)}</span>
+                              <button
+                                className="attachment-remove"
+                                title="Remove attachment"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  removeAttachment(c.id, a);
+                                }}
+                              >
+                                ✕
+                              </button>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
                       <div className="card-actions">
+                        <button
+                          className="attach-btn"
+                          disabled={uploadingId === c.id}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            triggerAttach(c.id);
+                          }}
+                        >
+                          {uploadingId === c.id ? "Uploading…" : "📎 Attach"}
+                        </button>
                         {category === "eliminated" && (
                           <button
                             className="restore"

@@ -1,3 +1,11 @@
+export type Attachment = {
+  id: string;
+  name: string;
+  url: string;
+  size: number;
+  uploadedAt: string;
+};
+
 export type Candidate = {
   id: string;
   name: string;
@@ -5,6 +13,7 @@ export type Candidate = {
   stage: string;
   note: string;
   scheduled?: boolean;
+  attachments?: Attachment[];
   updatedAt: string | null;
 };
 

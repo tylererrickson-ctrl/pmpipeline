@@ -171,11 +171,63 @@ header .sub {
 .badge-toggle:hover {
   filter: brightness(0.96);
 }
+.card-attachments {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 5px;
+}
+.attachment-chip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+.attachment-chip a {
+  color: var(--text);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+}
+.attachment-chip a:hover {
+  text-decoration: underline;
+}
+.attachment-size {
+  color: var(--muted);
+  white-space: nowrap;
+  font-size: 10px;
+}
+.attachment-remove {
+  border: none;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0 2px;
+  font-size: 11px;
+}
+.attachment-remove:hover {
+  color: var(--danger);
+}
 .card-actions {
   display: flex;
   gap: 6px;
   margin-top: 6px;
   flex-wrap: wrap;
+}
+.card-actions button.attach-btn {
+  color: var(--accent);
+  border-color: var(--accent-soft);
+}
+.card-actions button.attach-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
 }
 .card-actions button {
   font-size: 11px;

@@ -14,6 +14,7 @@
 
 # local dev data
 /data/state.local.json
+/public/uploads
 
 # typescript
 *.tsbuildinfo
