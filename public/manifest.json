@@ -1,0 +1,16 @@
+{
+  "name": "Portfolio Manager Pipeline",
+  "short_name": "PM Pipeline",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f5f7",
+  "theme_color": "#2f5fd6",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
