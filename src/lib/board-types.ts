@@ -6,6 +6,12 @@ export type Attachment = {
   uploadedAt: string;
 };
 
+export type ChecklistItem = {
+  id: string;
+  text: string;
+  done: boolean;
+};
+
 export type Candidate = {
   id: string;
   name: string;
@@ -14,6 +20,7 @@ export type Candidate = {
   note: string;
   scheduled?: boolean;
   attachments?: Attachment[];
+  checklist?: ChecklistItem[];
   createdAt?: string;
   updatedAt: string | null;
 };

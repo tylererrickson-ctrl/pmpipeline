@@ -3,6 +3,12 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { BoardState, Candidate, Attachment } from "@/lib/board-types";
 
+function newChecklistItemId(): string {
+  return typeof crypto.randomUUID === "function"
+    ? crypto.randomUUID()
+    : `item-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+}
+
 const POLL_INTERVAL_MS = 4000;
 
 function slugify(name: string): string {
@@ -37,16 +43,15 @@ export default function BoardPage() {
   const [addOpen, setAddOpen] = useState(false);
   const [newName, setNewName] = useState("");
   const [newFirm, setNewFirm] = useState("");
-  const [editingId, setEditingId] = useState<string | null>(null);
-  const [draftNote, setDraftNote] = useState("");
+  const [checklistDrafts, setChecklistDrafts] = useState<Record<string, string>>({});
   const [dragOverStage, setDragOverStage] = useState<string | null>(null);
   const [uploadingId, setUploadingId] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const pendingCandidateIdRef = useRef<string | null>(null);
 
-  // Skip clobbering an in-progress note edit when a background poll lands.
-  const editingIdRef = useRef<string | null>(null);
-  editingIdRef.current = editingId;
+  // Skip clobbering an in-progress checklist-item draft when a background poll lands.
+  const checklistDraftsRef = useRef<Record<string, string>>({});
+  checklistDraftsRef.current = checklistDrafts;
 
   const load = useCallback(async (isBackgroundPoll = false) => {
     try {
@@ -57,7 +62,9 @@ export default function BoardPage() {
       }
       if (!res.ok) throw new Error("bad response");
       const data: BoardState = await res.json();
-      if (isBackgroundPoll && editingIdRef.current) return; // don't yank the textarea out from under someone typing
+      // Don't yank a card's "add item" input out from under someone typing.
+      const isDraftingChecklistItem = Object.values(checklistDraftsRef.current).some((v) => v.trim());
+      if (isBackgroundPoll && isDraftingChecklistItem) return;
       setState(data);
       setStatus("Loaded");
       setStatusError(false);
@@ -157,14 +164,36 @@ export default function BoardPage() {
     });
   }
 
-  function saveNote(id: string) {
+  function addChecklistItem(candidateId: string) {
+    const text = (checklistDrafts[candidateId] || "").trim();
+    if (!text) return;
     mutate((next) => {
-      const c = next.candidates.find((x) => x.id === id);
+      const c = next.candidates.find((x) => x.id === candidateId);
       if (!c) return;
-      c.note = draftNote.trim();
+      c.checklist = [...(c.checklist || []), { id: newChecklistItemId(), text, done: false }];
       c.updatedAt = new Date().toISOString();
     });
-    setEditingId(null);
+    setChecklistDrafts((d) => ({ ...d, [candidateId]: "" }));
+  }
+
+  function toggleChecklistItem(candidateId: string, itemId: string) {
+    mutate((next) => {
+      const c = next.candidates.find((x) => x.id === candidateId);
+      if (!c) return;
+      const item = c.checklist?.find((i) => i.id === itemId);
+      if (!item) return;
+      item.done = !item.done;
+      c.updatedAt = new Date().toISOString();
+    });
+  }
+
+  function removeChecklistItem(candidateId: string, itemId: string) {
+    mutate((next) => {
+      const c = next.candidates.find((x) => x.id === candidateId);
+      if (!c) return;
+      c.checklist = (c.checklist || []).filter((i) => i.id !== itemId);
+      c.updatedAt = new Date().toISOString();
+    });
   }
 
   function addCandidate() {
@@ -343,14 +372,6 @@ export default function BoardPage() {
                       className="card"
                       draggable
                       onDragStart={(e) => e.dataTransfer.setData("text/plain", c.id)}
-                      onClick={() => {
-                        if (editingId === c.id) {
-                          setEditingId(null);
-                        } else {
-                          setEditingId(c.id);
-                          setDraftNote(c.note || "");
-                        }
-                      }}
                     >
                       <div className="card-name">{c.name}</div>
                       {c.firm && <div className="card-firm">{c.firm}</div>}
@@ -365,6 +386,62 @@ export default function BoardPage() {
                         {c.scheduled ? "✓ Scheduled" : "○ Not Scheduled"}
                       </button>
                       {c.note && <div className="card-note">{c.note}</div>}
+
+                      <div className="checklist">
+                        {(c.checklist || []).map((item) => (
+                          <div key={item.id} className="checklist-item">
+                            <label>
+                              <input
+                                type="checkbox"
+                                checked={item.done}
+                                onChange={(e) => {
+                                  e.stopPropagation();
+                                  toggleChecklistItem(c.id, item.id);
+                                }}
+                                onClick={(e) => e.stopPropagation()}
+                              />
+                              <span className={item.done ? "done" : undefined}>{item.text}</span>
+                            </label>
+                            <button
+                              className="checklist-remove"
+                              title="Remove item"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                removeChecklistItem(c.id, item.id);
+                              }}
+                            >
+                              ✕
+                            </button>
+                          </div>
+                        ))}
+                        <div className="checklist-add">
+                          <input
+                            type="text"
+                            placeholder="Add item…"
+                            value={checklistDrafts[c.id] || ""}
+                            onClick={(e) => e.stopPropagation()}
+                            onChange={(e) => {
+                              const value = e.target.value;
+                              setChecklistDrafts((d) => ({ ...d, [c.id]: value }));
+                            }}
+                            onKeyDown={(e) => {
+                              if (e.key === "Enter") {
+                                e.preventDefault();
+                                addChecklistItem(c.id);
+                              }
+                            }}
+                          />
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              addChecklistItem(c.id);
+                            }}
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
+
                       {c.createdAt && <div className="card-date">{formatDate(c.createdAt)}</div>}
 
                       {c.attachments && c.attachments.length > 0 && (
@@ -487,15 +564,6 @@ export default function BoardPage() {
                           </>
                         )}
                       </div>
-
-                      {editingId === c.id && (
-                        <div className="note-edit" onClick={(e) => e.stopPropagation()}>
-                          <textarea value={draftNote} onChange={(e) => setDraftNote(e.target.value)} />
-                          <button className="save-note" onClick={() => saveNote(c.id)}>
-                            Save note
-                          </button>
-                        </div>
-                      )}
                     </div>
                   );
                 })}

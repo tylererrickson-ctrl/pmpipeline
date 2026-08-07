@@ -262,23 +262,70 @@ header .sub {
   color: var(--accent);
   border-color: #c7d6f5;
 }
-.note-edit {
+.checklist {
   margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
-.note-edit textarea {
-  width: 100%;
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.checklist-item label {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  flex: 1;
+  min-width: 0;
+  font-size: 11px;
+  cursor: pointer;
+}
+.checklist-item input[type="checkbox"] {
+  margin-top: 2px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.checklist-item span.done {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+.checklist-remove {
+  border: none;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0 2px;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+.checklist-remove:hover {
+  color: var(--danger);
+}
+.checklist-add {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+.checklist-add input {
+  flex: 1;
+  min-width: 0;
   font-size: 11px;
   font-family: inherit;
   border: 1px solid var(--border);
   border-radius: 5px;
-  padding: 4px;
-  resize: vertical;
-  min-height: 40px;
+  padding: 3px 6px;
 }
-.note-edit .save-note {
-  margin-top: 4px;
+.checklist-add button {
   font-size: 11px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 5px;
+  padding: 2px 8px;
+  cursor: pointer;
 }
+.checklist-add button:hover { background: #eef0f3; }
 #addForm {
   display: none;
   gap: 8px;
