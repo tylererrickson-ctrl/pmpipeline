@@ -262,7 +262,7 @@ export default function BoardPage() {
       <header>
         <h1>Portfolio Manager Pipeline</h1>
         <span className="sub">
-          Introduction → Investment Committee → Offer → Structuring/Onboarding → Investment Enablement
+          Introduction → Investment Committee → Offer → Structuring → Onboarding
         </span>
         <input
           id="search"

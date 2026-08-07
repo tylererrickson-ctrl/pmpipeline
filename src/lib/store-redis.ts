@@ -5,7 +5,7 @@ import { BoardStore, ConflictError, redisEnvCreds } from "./store";
 const KEY = "pm-pipeline-board:state";
 
 const DEFAULT_SEED: BoardState = {
-  stages: ["Introduction", "Investment Committee", "Offer", "Structuring/Onboarding", "Investment Enablement"],
+  stages: ["Introduction", "Investment Committee", "Offer", "Structuring", "Onboarding", "Live Strategies", "Alpha Capture"],
   eliminatedStage: "Eliminated",
   futureLaunchStage: "Future Launches",
   candidates: [],

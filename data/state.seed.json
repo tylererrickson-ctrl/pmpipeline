@@ -3,8 +3,10 @@
     "Introduction",
     "Investment Committee",
     "Offer",
-    "Structuring/Onboarding",
-    "Investment Enablement"
+    "Structuring",
+    "Onboarding",
+    "Live Strategies",
+    "Alpha Capture"
   ],
   "eliminatedStage": "Eliminated",
   "candidates": [
@@ -132,7 +134,7 @@
       "id": "isaac-tak",
       "name": "Isaac Tak",
       "firm": "",
-      "stage": "Structuring/Onboarding",
+      "stage": "Structuring",
       "note": "Special sits - Citadel and single manager w/o state of NY funding",
       "updatedAt": "2026-08-04T15:47:05.836Z"
     },
@@ -292,7 +294,7 @@
       "id": "linda-du",
       "name": "Linda Du",
       "firm": "",
-      "stage": "Investment Enablement",
+      "stage": "Onboarding",
       "note": "",
       "updatedAt": "2026-08-04T14:34:38.277Z"
     },
@@ -300,7 +302,7 @@
       "id": "niko-weil",
       "name": "Niko Weil",
       "firm": "",
-      "stage": "Investment Enablement",
+      "stage": "Onboarding",
       "note": "",
       "updatedAt": "2026-08-04T14:34:52.196Z"
     },
@@ -340,7 +342,7 @@
       "id": "wels",
       "name": "Wels",
       "firm": "Hyperion",
-      "stage": "Investment Enablement",
+      "stage": "Onboarding",
       "note": "",
       "updatedAt": "2026-08-04T14:58:48.701Z"
     },

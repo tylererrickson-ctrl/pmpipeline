@@ -21,7 +21,7 @@ export class LocalFileBoardStore implements BoardStore {
     const seed = fs.existsSync(SEED_PATH)
       ? fs.readFileSync(SEED_PATH, "utf-8")
       : JSON.stringify({
-          stages: ["Introduction", "Investment Committee", "Offer", "Structuring/Onboarding", "Investment Enablement"],
+          stages: ["Introduction", "Investment Committee", "Offer", "Structuring", "Onboarding", "Live Strategies", "Alpha Capture"],
           eliminatedStage: "Eliminated",
           futureLaunchStage: "Future Launches",
           candidates: [],
