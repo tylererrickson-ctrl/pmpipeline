@@ -15,280 +15,525 @@
       "name": "Ben Holtz",
       "firm": "",
       "stage": "Eliminated",
-      "note": "not currently pursuing a Riptide vehicle at all (as of 2026-08-03).",
-      "updatedAt": "2026-08-05T11:39:04.489Z"
+      "note": "",
+      "updatedAt": "2026-08-05T11:39:04.489Z",
+      "checklist": [
+        {
+          "id": "a590e63e-4a96-4ec6-ba66-ee51c8990cc7",
+          "text": "not currently pursuing a Riptide vehicle at all (as of 2026-08-03).",
+          "done": false
+        }
+      ]
     },
     {
       "id": "blago-baychev",
       "name": "Blago Baychev",
       "firm": "",
       "stage": "Introduction",
-      "note": "With SG/MH - talk w/ MH on data cost structure.",
-      "updatedAt": "2026-08-04T13:50:40.426Z"
+      "note": "",
+      "updatedAt": "2026-08-04T13:50:40.426Z",
+      "checklist": [
+        {
+          "id": "6f7504e2-1409-48e2-a882-0cd3b0a42680",
+          "text": "With SG/MH - talk w/ MH on data cost structure.",
+          "done": false
+        }
+      ]
     },
     {
       "id": "brian-church",
       "name": "Brian Church",
       "firm": "",
       "stage": "Introduction",
-      "note": "Follow up w/ SG/MH",
-      "updatedAt": "2026-08-04T15:09:21.290Z"
+      "note": "",
+      "updatedAt": "2026-08-04T15:09:21.290Z",
+      "checklist": [
+        {
+          "id": "06c0c69c-c72e-419b-87c3-7eaf482b8bff",
+          "text": "Follow up w/ SG/MH",
+          "done": false
+        }
+      ]
     },
     {
       "id": "bujar-gosalci",
       "name": "Bujar Gosalci",
       "firm": "",
       "stage": "Investment Committee",
-      "note": "Options from Kosovo - TE/KF",
-      "updatedAt": "2026-08-04T14:26:06.170Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:26:06.170Z",
+      "checklist": [
+        {
+          "id": "2977b887-084d-468d-875e-fbc26c74a853",
+          "text": "Options from Kosovo - TE/KF",
+          "done": false
+        }
+      ]
     },
     {
       "id": "christopher-hughes",
       "name": "Christopher Hughes",
       "firm": "",
       "stage": "Investment Committee",
-      "note": "Alpha Capture",
-      "updatedAt": "2026-08-04T13:53:40.499Z"
+      "note": "",
+      "updatedAt": "2026-08-04T13:53:40.499Z",
+      "checklist": [
+        {
+          "id": "8c440be1-2b7e-450b-b896-ff92b580b357",
+          "text": "Alpha Capture",
+          "done": false
+        }
+      ]
     },
     {
       "id": "colin-lozzi",
       "name": "Colin Lozzi",
       "firm": "",
       "stage": "Introduction",
-      "note": "With KF",
-      "updatedAt": "2026-08-04T14:26:58.908Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:26:58.908Z",
+      "checklist": [
+        {
+          "id": "53cee5c5-4a3b-46c4-8188-7945526005bc",
+          "text": "With KF",
+          "done": false
+        }
+      ]
     },
     {
       "id": "daniel-czabaj",
       "name": "Daniel Czabaj",
       "firm": "",
       "stage": "Eliminated",
-      "note": "Said he doesn't see himself as a fit.",
-      "updatedAt": "2026-08-05T11:38:41.128Z"
+      "note": "",
+      "updatedAt": "2026-08-05T11:38:41.128Z",
+      "checklist": [
+        {
+          "id": "91848bcc-20dd-4826-9a08-3a1eb5edaaf8",
+          "text": "Said he doesn't see himself as a fit.",
+          "done": false
+        }
+      ]
     },
     {
       "id": "darryl-wyse",
       "name": "Darryl Wyse",
       "firm": "",
       "stage": "Introduction",
-      "note": "SG Strategy Review, KF Business Review",
-      "updatedAt": "2026-08-04T13:54:48.083Z"
+      "note": "",
+      "updatedAt": "2026-08-04T13:54:48.083Z",
+      "checklist": [
+        {
+          "id": "aeb5fc05-5f40-490a-9660-8fa1451b86a9",
+          "text": "SG Strategy Review, KF Business Review",
+          "done": false
+        }
+      ]
     },
     {
       "id": "deepak-singh",
       "name": "Deepak Singh",
       "firm": "",
       "stage": "Investment Committee",
-      "note": "With MH/KF - how can we fund it?",
-      "updatedAt": "2026-08-04T14:05:30.212Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:05:30.212Z",
+      "checklist": [
+        {
+          "id": "5efff43c-03ae-40a6-ac59-0a145e2073e3",
+          "text": "With MH/KF - how can we fund it?",
+          "done": false
+        }
+      ]
     },
     {
       "id": "dillon-lanius",
       "name": "Dillon Lanius",
       "firm": "",
       "stage": "Offer",
-      "note": "RL BOX HIM IN",
-      "updatedAt": "2026-08-04T16:41:48.868Z"
+      "note": "",
+      "updatedAt": "2026-08-04T16:41:48.868Z",
+      "checklist": [
+        {
+          "id": "31dc79cc-4d36-416d-9bb2-2e86c3840eae",
+          "text": "RL BOX HIM IN",
+          "done": false
+        }
+      ]
     },
     {
       "id": "dixon-midland",
       "name": "Dixon Midland",
       "firm": "",
       "stage": "Investment Committee",
-      "note": "Tax aware with enhanced trading",
-      "updatedAt": "2026-08-04T14:02:28.333Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:02:28.333Z",
+      "checklist": [
+        {
+          "id": "7b6a49ae-7346-4dfc-bf42-92ab7ff4867e",
+          "text": "Tax aware with enhanced trading",
+          "done": false
+        }
+      ]
     },
     {
       "id": "doug-clinton",
       "name": "Doug Clinton",
       "firm": "",
       "stage": "Introduction",
-      "note": "SG/KF Review",
-      "updatedAt": "2026-08-04T14:02:41.316Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:02:41.316Z",
+      "checklist": [
+        {
+          "id": "4bfc78fb-28ad-4c68-b79c-2a4987a86b3f",
+          "text": "SG/KF Review",
+          "done": false
+        }
+      ]
     },
     {
       "id": "geoffrey-horton",
       "name": "Geoffrey Horton",
       "firm": "",
       "stage": "Investment Committee",
-      "note": "Business Growth",
-      "updatedAt": "2026-08-04T14:03:36.584Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:03:36.584Z",
+      "checklist": [
+        {
+          "id": "46b58a2d-1b78-41a7-bfb8-9e323d26ce84",
+          "text": "Business Growth",
+          "done": false
+        }
+      ]
     },
     {
       "id": "guilherme-motta",
       "name": "Guilherme Motta",
       "firm": "",
       "stage": "Investment Committee",
-      "note": "With MH/KF - how can we fund it?",
-      "updatedAt": "2026-08-04T14:05:33.524Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:05:33.524Z",
+      "checklist": [
+        {
+          "id": "eb7666ba-fb5f-4c52-90a7-12d5e59aa040",
+          "text": "With MH/KF - how can we fund it?",
+          "done": false
+        }
+      ]
     },
     {
       "id": "hayk-grigoryan",
       "name": "Hayk Grigoryan",
       "firm": "",
       "stage": "Investment Committee",
-      "note": "Alpha Capture - no money",
-      "updatedAt": "2026-08-04T14:08:18.051Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:08:18.051Z",
+      "checklist": [
+        {
+          "id": "3e1ed111-f57d-4a44-b5a2-339d9685e603",
+          "text": "Alpha Capture - no money",
+          "done": false
+        }
+      ]
     },
     {
       "id": "isaac-tak",
       "name": "Isaac Tak",
       "firm": "",
       "stage": "Structuring",
-      "note": "Special sits - Citadel and single manager w/o state of NY funding",
-      "updatedAt": "2026-08-04T15:47:05.836Z"
+      "note": "",
+      "updatedAt": "2026-08-04T15:47:05.836Z",
+      "checklist": [
+        {
+          "id": "e82b7dcc-4faa-4afd-8cc7-b0a3467c901c",
+          "text": "Special sits - Citadel and single manager w/o state of NY funding",
+          "done": false
+        }
+      ]
     },
     {
       "id": "jay-schneider",
       "name": "Jay Schneider",
       "firm": "",
       "stage": "Introduction",
-      "note": "KF/TE Pitch",
-      "updatedAt": "2026-08-04T14:11:24.932Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:11:24.932Z",
+      "checklist": [
+        {
+          "id": "66b6f93f-d9a5-4127-9e86-b2907042d759",
+          "text": "KF/TE Pitch",
+          "done": false
+        }
+      ]
     },
     {
       "id": "jennifer-croswell",
       "name": "Jennifer Croswell",
       "firm": "",
       "stage": "Introduction",
-      "note": "Lunch meeting.",
-      "updatedAt": "2026-08-04T14:12:09.204Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:12:09.204Z",
+      "checklist": [
+        {
+          "id": "9a3a83bb-285b-45c2-bb6c-aeeb5ef8e0d1",
+          "text": "Lunch meeting.",
+          "done": false
+        }
+      ]
     },
     {
       "id": "jesse-laudon",
       "name": "Jesse Laudon",
       "firm": "",
       "stage": "Offer",
-      "note": "MLP Utilities",
-      "updatedAt": "2026-08-04T14:12:33.242Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:12:33.242Z",
+      "checklist": [
+        {
+          "id": "a8e080f7-fa20-4e1f-8ad5-c6b53d07128c",
+          "text": "MLP Utilities",
+          "done": false
+        }
+      ]
     },
     {
       "id": "joe-padellaro",
       "name": "Joe Padellaro",
       "firm": "",
       "stage": "Offer",
-      "note": "Let's make a deal (MH/KF/TE)",
-      "updatedAt": "2026-08-04T14:15:42.782Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:15:42.782Z",
+      "checklist": [
+        {
+          "id": "30b84f6a-25e5-457c-92a8-b0a4cd2fde2b",
+          "text": "Let's make a deal (MH/KF/TE)",
+          "done": false
+        }
+      ]
     },
     {
       "id": "mark-melchiorre",
       "name": "Mark Melchiorre",
       "firm": "",
       "stage": "Offer",
-      "note": "Schedule w/ MH/TE/RL",
-      "updatedAt": "2026-08-04T14:16:30.540Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:16:30.540Z",
+      "checklist": [
+        {
+          "id": "554d335e-87da-4137-b466-b84b6b62b28f",
+          "text": "Schedule w/ MH/TE/RL",
+          "done": false
+        }
+      ]
     },
     {
       "id": "mayank-lodaliya",
       "name": "Mayank Lodaliya",
       "firm": "",
       "stage": "Eliminated",
-      "note": "Riptide explicitly declined to move forward — cited too young, too little capital.",
-      "updatedAt": "2026-08-05T11:38:30.353Z"
+      "note": "",
+      "updatedAt": "2026-08-05T11:38:30.353Z",
+      "checklist": [
+        {
+          "id": "c46a2428-02be-4b6a-bcba-5d617639657e",
+          "text": "Riptide explicitly declined to move forward — cited too young, too little capital.",
+          "done": false
+        }
+      ]
     },
     {
       "id": "patrick-conway",
       "name": "Patrick Conway",
       "firm": "",
       "stage": "Investment Committee",
-      "note": "With MH/KF - how can we fund it?",
-      "updatedAt": "2026-08-04T14:17:50.958Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:17:50.958Z",
+      "checklist": [
+        {
+          "id": "d7fd97c1-0353-4e10-9c62-d3fae00d0dbb",
+          "text": "With MH/KF - how can we fund it?",
+          "done": false
+        }
+      ]
     },
     {
       "id": "ran-karni",
       "name": "Ran Karni",
       "firm": "Cingulait",
       "stage": "Introduction",
-      "note": "W/ Matt - at Hurricane",
-      "updatedAt": "2026-08-04T14:19:09.611Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:19:09.611Z",
+      "checklist": [
+        {
+          "id": "6370f183-f984-4e08-abdf-a8c7ff79a8cb",
+          "text": "W/ Matt - at Hurricane",
+          "done": false
+        }
+      ]
     },
     {
       "id": "rishi-tej",
       "name": "Rishi Tej",
       "firm": "",
       "stage": "Eliminated",
-      "note": "Analyst",
-      "updatedAt": "2026-08-04T14:26:40.212Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:26:40.212Z",
+      "checklist": [
+        {
+          "id": "fc1c4635-2251-485c-be12-deea93202faa",
+          "text": "Analyst",
+          "done": false
+        }
+      ]
     },
     {
       "id": "shahin-vallee",
       "name": "Shahin Vallée",
       "firm": "",
       "stage": "Introduction",
-      "note": "W/ KF/TE",
-      "updatedAt": "2026-08-04T14:19:51.682Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:19:51.682Z",
+      "checklist": [
+        {
+          "id": "bf6707fa-a460-4925-8481-f255fffe9bb9",
+          "text": "W/ KF/TE",
+          "done": false
+        }
+      ]
     },
     {
       "id": "stevan-jevremov",
       "name": "Stevan Jevremov",
       "firm": "Desert Rose Capital",
       "stage": "Introduction",
-      "note": "Follow up via KF",
-      "updatedAt": "2026-08-04T14:21:17.770Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:21:17.770Z",
+      "checklist": [
+        {
+          "id": "62f91318-fc56-41a4-9688-62ed69b447e6",
+          "text": "Follow up via KF",
+          "done": false
+        }
+      ]
     },
     {
       "id": "steven-moyer",
       "name": "Steven Moyer",
       "firm": "",
       "stage": "Offer",
-      "note": "SMA w/ ETF optionality - need to pitch a start in ROF as Private Fund",
-      "updatedAt": "2026-08-04T16:41:59.029Z"
+      "note": "",
+      "updatedAt": "2026-08-04T16:41:59.029Z",
+      "checklist": [
+        {
+          "id": "5b451d94-905c-4c07-92ab-2fba5a99f47f",
+          "text": "SMA w/ ETF optionality - need to pitch a start in ROF as Private Fund",
+          "done": false
+        }
+      ]
     },
     {
       "id": "symphony-one-capital",
       "name": "Symphony One Capital",
       "firm": "",
       "stage": "Eliminated",
-      "note": "No SMAs",
-      "updatedAt": "2026-08-04T14:27:46.954Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:27:46.954Z",
+      "checklist": [
+        {
+          "id": "11141f24-c724-4116-a388-85729d6528b2",
+          "text": "No SMAs",
+          "done": false
+        }
+      ]
     },
     {
       "id": "white-manna-capital",
       "name": "White Manna Capital",
       "firm": "",
       "stage": "Eliminated",
-      "note": "Too far along.",
-      "updatedAt": "2026-08-05T11:38:14.840Z"
+      "note": "",
+      "updatedAt": "2026-08-05T11:38:14.840Z",
+      "checklist": [
+        {
+          "id": "bf3f6ad4-dfd7-41a8-bd9d-aeae0f0970a8",
+          "text": "Too far along.",
+          "done": false
+        }
+      ]
     },
     {
       "id": "ze-capital",
       "name": "ZE Capital",
       "firm": "",
       "stage": "Eliminated",
-      "note": "Too mature- not a fit",
-      "updatedAt": "2026-08-04T14:32:04.515Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:32:04.515Z",
+      "checklist": [
+        {
+          "id": "de844dbd-7cbf-4cc2-a4f9-257ca4555d92",
+          "text": "Too mature- not a fit",
+          "done": false
+        }
+      ]
     },
     {
       "id": "roy-alame",
       "name": "Roy Alame",
       "firm": "",
       "stage": "Offer",
-      "note": "Pitch w/ RL",
-      "updatedAt": "2026-08-04T14:23:39.738Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:23:39.738Z",
+      "checklist": [
+        {
+          "id": "a3a241ad-c895-4cf0-a986-11ee7a559ae3",
+          "text": "Pitch w/ RL",
+          "done": false
+        }
+      ]
     },
     {
       "id": "quantinovva",
       "name": "Quantinovva",
       "firm": "",
       "stage": "Future Launches",
-      "note": "10/1 launch - doc updates",
-      "updatedAt": "2026-08-04T18:50:33.837Z"
+      "note": "",
+      "updatedAt": "2026-08-04T18:50:33.837Z",
+      "checklist": [
+        {
+          "id": "ba937b6d-935c-410a-a126-30016c16bb1b",
+          "text": "10/1 launch - doc updates",
+          "done": false
+        }
+      ]
     },
     {
       "id": "flex-income",
       "name": "Flex Income",
       "firm": "",
       "stage": "Future Launches",
-      "note": "10/1 launch - doc updates",
-      "updatedAt": "2026-08-04T18:50:35.829Z"
+      "note": "",
+      "updatedAt": "2026-08-04T18:50:35.829Z",
+      "checklist": [
+        {
+          "id": "1fac3a29-539c-434f-b410-42123fa57543",
+          "text": "10/1 launch - doc updates",
+          "done": false
+        }
+      ]
     },
     {
       "id": "kit-spring",
       "name": "Kit Spring",
       "firm": "",
       "stage": "Eliminated",
-      "note": "Too volatilte",
-      "updatedAt": "2026-08-04T14:33:47.392Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:33:47.392Z",
+      "checklist": [
+        {
+          "id": "ed199ce4-6d7c-4788-84cb-0b0ef0497392",
+          "text": "Too volatilte",
+          "done": false
+        }
+      ]
     },
     {
       "id": "linda-du",
@@ -311,32 +556,60 @@
       "name": "Strivepoint",
       "firm": "",
       "stage": "Introduction",
-      "note": "Follow up w/ TE/KF",
-      "updatedAt": "2026-08-04T14:35:35.690Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:35:35.690Z",
+      "checklist": [
+        {
+          "id": "be1d6e91-2508-4f95-85cc-1cc958bb73cb",
+          "text": "Follow up w/ TE/KF",
+          "done": false
+        }
+      ]
     },
     {
       "id": "oraclum",
       "name": "Oraclum",
       "firm": "",
       "stage": "Future Launches",
-      "note": "Jan '27 - need funding",
-      "updatedAt": "2026-08-04T18:50:38.140Z"
+      "note": "",
+      "updatedAt": "2026-08-04T18:50:38.140Z",
+      "checklist": [
+        {
+          "id": "16e08972-d99d-4dea-a9ca-37658db2865a",
+          "text": "Jan '27 - need funding",
+          "done": false
+        }
+      ]
     },
     {
       "id": "fred-steindler",
       "name": "Fred Steindler",
       "firm": "",
       "stage": "Offer",
-      "note": "W/ TE/SG",
-      "updatedAt": "2026-08-04T14:38:36.562Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:38:36.562Z",
+      "checklist": [
+        {
+          "id": "2c3b1d8a-f934-438f-8b4c-011a49d146e8",
+          "text": "W/ TE/SG",
+          "done": false
+        }
+      ]
     },
     {
       "id": "energy-group-capital",
       "name": "Energy Group Capital",
       "firm": "",
       "stage": "Investment Committee",
-      "note": "With MH/KF - how can we fund it?",
-      "updatedAt": "2026-08-04T14:40:45.117Z"
+      "note": "",
+      "updatedAt": "2026-08-04T14:40:45.117Z",
+      "checklist": [
+        {
+          "id": "5621efe1-864d-4640-ae9a-8e394b5b7a77",
+          "text": "With MH/KF - how can we fund it?",
+          "done": false
+        }
+      ]
     },
     {
       "id": "wels",
@@ -351,58 +624,107 @@
       "name": "Yogash Borkar",
       "firm": "",
       "stage": "Investment Committee",
-      "note": "Long Only PM in Greenwich - thinking of his next move",
-      "updatedAt": "2026-08-04T18:17:21.622Z"
+      "note": "",
+      "updatedAt": "2026-08-04T18:17:21.622Z",
+      "checklist": [
+        {
+          "id": "924d868d-2cb9-4320-a4f5-2cce36618fcb",
+          "text": "Long Only PM in Greenwich - thinking of his next move",
+          "done": false
+        }
+      ]
     },
     {
       "id": "james-sinclair",
       "name": "James Sinclair",
       "firm": "",
       "stage": "Future Launches",
-      "note": "Likely Jan 27 - $25-50m launch",
+      "note": "",
       "scheduled": false,
-      "updatedAt": "2026-08-04T18:57:11.584Z"
+      "updatedAt": "2026-08-04T18:57:11.584Z",
+      "checklist": [
+        {
+          "id": "3810ecf8-4bff-49be-97c2-8a52103a0914",
+          "text": "Likely Jan 27 - $25-50m launch",
+          "done": false
+        }
+      ]
     },
     {
       "id": "david-rosenberg",
       "name": "David Rosenberg",
       "firm": "",
       "stage": "Future Launches",
-      "note": "10/1 - Offshore Required",
+      "note": "",
       "scheduled": false,
-      "updatedAt": "2026-08-04T18:54:58.712Z"
+      "updatedAt": "2026-08-04T18:54:58.712Z",
+      "checklist": [
+        {
+          "id": "166f75b3-f870-4df6-a134-260f529158db",
+          "text": "10/1 - Offshore Required",
+          "done": false
+        }
+      ]
     },
     {
       "id": "martin-kollmorgen",
       "name": "Martin Kollmorgen",
       "firm": "Serenity Alternatives",
       "stage": "Introduction",
-      "note": "Intro call 8/5",
-      "updatedAt": null
+      "note": "",
+      "updatedAt": null,
+      "checklist": [
+        {
+          "id": "78f32b2b-b35c-4344-8cac-c7bb8f8c5a9f",
+          "text": "Intro call 8/5",
+          "done": false
+        }
+      ]
     },
     {
       "id": "sean-lee",
       "name": "Sean Lee",
       "firm": "Unwavering Capital",
       "stage": "Introduction",
-      "note": "Intro call 8/5 - Kuala Lumpur",
-      "updatedAt": null
+      "note": "",
+      "updatedAt": null,
+      "checklist": [
+        {
+          "id": "8803f386-bd9d-45b0-83d9-301bd591ab0b",
+          "text": "Intro call 8/5 - Kuala Lumpur",
+          "done": false
+        }
+      ]
     },
     {
       "id": "philip-lockett",
       "name": "Philip Lockett",
       "firm": "BlackRidge",
       "stage": "Introduction",
-      "note": "Alpha capture via Marshall Wace - follow-up w/ Tyler next",
-      "updatedAt": null
+      "note": "",
+      "updatedAt": null,
+      "checklist": [
+        {
+          "id": "daf5e780-abd0-46a8-92b1-547b9845c241",
+          "text": "Alpha capture via Marshall Wace - follow-up w/ Tyler next",
+          "done": false
+        }
+      ]
     },
     {
       "id": "matthew-hansen",
       "name": "Matthew Hansen",
       "firm": "APM (Advanced Portfolio Management)",
       "stage": "Introduction",
-      "note": "Market Neutral SMA - profile pending",
-      "updatedAt": null
+      "note": "",
+      "updatedAt": null,
+      "checklist": [
+        {
+          "id": "73991e71-5efe-4eb6-b726-ca6ceab74cf0",
+          "text": "Market Neutral SMA - profile pending",
+          "done": false
+        }
+      ]
     }
   ],
   "futureLaunchStage": "Future Launches",
