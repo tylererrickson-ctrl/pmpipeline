@@ -14,6 +14,7 @@ export type Candidate = {
   note: string;
   scheduled?: boolean;
   attachments?: Attachment[];
+  createdAt?: string;
   updatedAt: string | null;
 };
 

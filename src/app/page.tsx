@@ -15,6 +15,12 @@ function formatSize(bytes: number): string {
   return `${(bytes / 1024 / 1024).toFixed(1)}MB`;
 }
 
+function formatDate(iso: string): string {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+}
+
 function categoryOf(state: BoardState, stage: string): "main" | "future" | "eliminated" {
   if (stage === state.eliminatedStage) return "eliminated";
   if (stage === state.futureLaunchStage) return "future";
@@ -173,6 +179,7 @@ export default function BoardPage() {
         stage: next.stages[0],
         note: "",
         scheduled: false,
+        createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
       });
     });
@@ -358,6 +365,7 @@ export default function BoardPage() {
                         {c.scheduled ? "✓ Scheduled" : "○ Not Scheduled"}
                       </button>
                       {c.note && <div className="card-note">{c.note}</div>}
+                      {c.createdAt && <div className="card-date">{formatDate(c.createdAt)}</div>}
 
                       {c.attachments && c.attachments.length > 0 && (
                         <div className="card-attachments">
