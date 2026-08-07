@@ -24,6 +24,7 @@ function categoryOf(state: BoardState, stage: string): "main" | "future" | "elim
 export default function BoardPage() {
   const [state, setState] = useState<BoardState | null>(null);
   const [filter, setFilter] = useState("");
+  const [stageFilter, setStageFilter] = useState("");
   const [status, setStatus] = useState("Loading…");
   const [statusError, setStatusError] = useState(false);
   const [banner, setBanner] = useState<string | null>(null);
@@ -263,6 +264,12 @@ export default function BoardPage() {
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
         />
+        <select id="stageFilter" value={stageFilter} onChange={(e) => setStageFilter(e.target.value)}>
+          <option value="">All Categories</option>
+          {allStages.map((stage) => (
+            <option key={stage} value={stage}>{stage}</option>
+          ))}
+        </select>
         <button id="addBtn" onClick={() => setAddOpen((v) => !v)}>+ Add PM</button>
         <span id="status" className={statusError ? "error" : undefined}>{status}</span>
       </header>
@@ -293,6 +300,7 @@ export default function BoardPage() {
 
       <div id="board">
         {allStages.map((stage) => {
+          if (stageFilter && stage !== stageFilter) return null;
           const category = categoryOf(state, stage);
           const candidates = state.candidates.filter((c) => c.stage === stage);
           const visible = candidates.filter(matches);

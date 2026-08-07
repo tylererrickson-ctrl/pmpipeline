@@ -47,6 +47,13 @@ header .sub {
   font-size: 13px;
   width: 220px;
 }
+#stageFilter {
+  padding: 7px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  background: var(--panel);
+}
 #addBtn {
   padding: 7px 12px;
   border: 1px solid var(--accent);
@@ -311,6 +318,10 @@ header .sub {
     margin-left: 0;
     width: 100%;
     order: 3;
+  }
+  #stageFilter {
+    flex: 1 1 auto;
+    order: 4;
   }
   #addBtn {
     order: 2;
